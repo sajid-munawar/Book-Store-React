@@ -1,10 +1,12 @@
-import Navbar from "./Navbar";
+import Navbar from './Navbar';
 
 function Categories() {
-    return (<div>
-        <Navbar />
-        <button type="button">Categories</button>
-    </div> );
+  return (
+    <div>
+      <Navbar />
+      <button type="button">Categories</button>
+    </div>
+  );
 }
- 
+
 export default Categories;
