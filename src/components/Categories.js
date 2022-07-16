@@ -4,7 +4,7 @@ function Categories() {
   return (
     <div>
       <Navbar />
-      <button type="button">Categories</button>
+      <button type="button">Check status</button>
     </div>
   );
 }

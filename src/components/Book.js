@@ -14,6 +14,7 @@ function Book({ title, author }) {
         {author}
         {' '}
       </h4>
+      <button type="button">Remove</button>
     </div>
   );
 }
