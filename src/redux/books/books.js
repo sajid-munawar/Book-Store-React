@@ -1,9 +1,16 @@
+import { useId } from 'react';
 // Actions
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
+const bookList = [
+  { title: 'Design Patterns', author: 'Erich Gamma', id: `${useId()}` },
+  { title: 'Patterns of Enterprise Application Architecture', author: ' Martin Fowler', id: `${useId()}` },
+  { title: 'Code Complete', author: 'Steve Mcconnell', id: `${useId()}` },
+  { title: 'Enterprise Integration Patterns', author: 'Gregor Hohpe', id: `${useId()}` },
+];
 // Reducer
-const booksReducer = (state = [], action) => {
+const booksReducer = (state = bookList, action) => {
   switch (action.type) {
     case ADD_BOOK:
       return [
