@@ -1,5 +1,6 @@
 const CHECK_STATUS = 'bookstore/categories/CHECK_STATUS';
 
+// eslint-disable-next-line default-param-last
 const checkStatusReducer = (state = [], action) => {
   switch (action.type) {
     case CHECK_STATUS:
@@ -9,9 +10,8 @@ const checkStatusReducer = (state = [], action) => {
   }
 };
 
-export const checkStatus = (bookStaus) => ({
+export const checkStatus = () => ({
   type: CHECK_STATUS,
-  bookStaus,
 });
 
 export default checkStatusReducer;

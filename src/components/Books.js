@@ -1,25 +1,22 @@
-import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import Book from './Book';
-import Form from './form';
 import Navbar from './Navbar';
+import Form from './form';
 
 function Books() {
-  const bookList = useState([
-    { title: 'Design Patterns', author: 'Erich Gamma' },
-    { title: 'Patterns of Enterprise Application Architecture', author: ' Martin Fowler' },
-    { title: 'Code Complete', author: 'Steve Mcconnell' },
-    { title: 'Enterprise Integration Patterns', author: 'Gregor Hohpe' },
-  ]);
+  const books = useSelector((state) => state.book);
+  const booksUi = books.map((book) => (
+    <Book
+      key={book.title}
+      title={book.title}
+      author={book.author}
+      id={book.id}
+    />
+  ));
   return (
     <div>
       <Navbar />
-      {bookList[0].map((book) => (
-        <Book
-          key={book.title}
-          title={book.title}
-          author={book.author}
-        />
-      ))}
+      {booksUi}
       <Form />
     </div>
   );
