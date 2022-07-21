@@ -2,16 +2,22 @@
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
+export const bookList = [
+  { title: 'Design Patterns', author: 'Erich Gamma', id: '12' },
+  { title: 'Patterns of Enterprise Application Architecture', author: ' Martin Fowler', id: '13' },
+  { title: 'Code Complete', author: 'Steve Mcconnell', id: '14' },
+  { title: 'Enterprise Integration Patterns', author: 'Gregor Hohpe', id: '15' },
+];
 // Reducer
-const booksReducer = (state = [], action) => {
+const booksReducer = (state = bookList, action) => {
   switch (action.type) {
     case ADD_BOOK:
       return [
         ...state,
         {
-          id: action.id,
           title: action.title,
           author: action.author,
+          id: action.id,
         },
       ];
     case REMOVE_BOOK:
@@ -21,12 +27,9 @@ const booksReducer = (state = [], action) => {
   }
 };
 // Action creators
-export const addBook = ({ title, author }) => ({
+export const addBook = (book) => ({
   type: ADD_BOOK,
-  book: {
-    title,
-    author,
-  },
+  ...book,
 });
 
 export const removeBook = (id) => ({
