@@ -9,9 +9,8 @@ const checkStatusReducer = (state = [], action) => {
   }
 };
 
-export const checkStatus = (bookStaus) => ({
+export const checkStatus = () => ({
   type: CHECK_STATUS,
-  bookStaus,
 });
 
 export default checkStatusReducer;
