@@ -60,7 +60,7 @@ const apiReducer = (state = books, action) => {
       ];
     case 'GET_ALL_BOOK/fulfilled':
       return action.payload;
-    case 'DELETE_BOOK':
+    case 'DELETE_BOOK/fulfilled':
       return state.filter((books) => books.item_id !== action.payload[1]);
     default:
       return state;

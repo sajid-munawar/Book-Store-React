@@ -4,6 +4,10 @@ import { deleteBook } from '../redux/books/apiReducer';
 
 function Book({ id, title, author }) {
   const dispatch = useDispatch();
+  const handleClick = () => {
+    console.log(id);
+    dispatch(deleteBook(id));
+  };
   return (
     <div>
       <h2>
@@ -17,7 +21,7 @@ function Book({ id, title, author }) {
         {author}
         {' '}
       </h4>
-      <button type="button" onClick={() => dispatch(deleteBook(id))}>Remove</button>
+      <button type="button" onClick={() => handleClick()}>Remove</button>
     </div>
   );
 }
