@@ -50,7 +50,6 @@ export const addBook = createAsyncThunk(
 
 const books = [];
 
-// eslint-disable-next-line default-param-last
 const apiReducer = (state = books, action) => {
   switch (action.type) {
     case 'CREATE_BOOK/fulfilled':
