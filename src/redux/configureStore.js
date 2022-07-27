@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import { configureStore } from '@reduxjs/toolkit';
-import booksReducer from './books/books';
 import checkStatusReducer from './categories/categories';
+import apiReducer from './books/apiReducer';
 
 const rootReducer = combineReducers({
-  book: booksReducer,
+  book: apiReducer,
   status: checkStatusReducer,
 });
 

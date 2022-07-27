@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/books';
+import { addBook } from '../redux/books/apiReducer';
 
 const uid = () => Date.now().toString(36) + Math.random().toString(36).substr(2);
 function Form() {
@@ -8,7 +8,8 @@ function Form() {
     const values = {
       title: e.target.title.value,
       author: e.target.author.value,
-      id: uid(),
+      item_id: uid(),
+      category: 'Fiction',
 
     };
     e.preventDefault();

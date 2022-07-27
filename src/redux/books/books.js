@@ -9,6 +9,7 @@ export const bookList = [
   { title: 'Enterprise Integration Patterns', author: 'Gregor Hohpe', id: '15' },
 ];
 // Reducer
+// eslint-disable-next-line default-param-last
 const booksReducer = (state = bookList, action) => {
   switch (action.type) {
     case ADD_BOOK:
