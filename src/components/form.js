@@ -17,11 +17,12 @@ function Form() {
     e.target.reset();
   };
   return (
-    <div>
+    <div className="form-container">
+      <h1 className="add-Title">ADD NEW BOOK</h1>
       <form action="#" onSubmit={handleSubmit}>
-        <input type="text" name="title" placeholder="Title" />
-        <input type="text" name="author" placeholder="Author" />
-        <button type="submit">Add Book</button>
+        <input type="text" name="title" placeholder="Book title" className="addBookTitle" />
+        <input type="text" name="author" placeholder="Author" className="add-author" />
+        <button type="submit" className="ADD-BOOK">Add Book</button>
       </form>
     </div>
   );

@@ -1,3 +1,152 @@
-body {
-  background: #ccc;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.nav-container {
+  width: 87.5rem;
+  height: 5.938rem;
+  margin: 0 0 2.375rem;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  background-color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Bookstore-CMS {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.BOOKS {
+  letter-spacing: 1.9px;
+  color: #121212;
+  margin-right: 30%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.CATEGORIES {
+  letter-spacing: 1.9px;
+  color: #121212;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.BOOK_CONTAINER {
+  width: 75rem;
+  height: 10.625rem;
+  margin: 2.313rem 6.25rem 0;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.Title {
+  width: 12.313rem;
+  height: 1.813rem;
+  margin: 0.188rem 20.188rem 0 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.author {
+  width: 6.688rem;
+  height: 1.188rem;
+  margin: 0.25rem 0 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.remove {
+  cursor: pointer;
+  border: none;
+  width: 3.375rem;
+  height: 1.188rem;
+  margin: 0.188rem 0.938rem 0.125rem 6rem;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.form-container {
+  width: 87.5rem;
+  height: 68.563rem;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  margin: 2.313rem 6.25rem 0;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fafafa;
+}
+
+.add-Title {
+  width: 10.875rem;
+  height: 1.5rem;
+  margin: 1.813rem 32.75rem 1.188rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: gray;
+}
+
+.addBookTitle {
+  height: 30px;
+  width: 30%;
+}
+
+.add-author {
+  height: 30px;
+  width: 15%;
+}
+
+.ADD-BOOK {
+  width: 11.5rem;
+  height: 2.3rem;
+  margin: 1.188rem 0 0 2rem;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  border: 0;
+  background-color: #0290ff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: #fff;
 }

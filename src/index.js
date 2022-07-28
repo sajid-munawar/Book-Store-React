@@ -9,6 +9,7 @@ import { Provider } from 'react-redux';
 import Books from './components/Books';
 import Categories from './components/Categories';
 import store from './redux/configureStore';
+import './components/App.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

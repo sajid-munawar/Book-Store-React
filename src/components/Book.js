@@ -5,23 +5,17 @@ import { deleteBook } from '../redux/books/apiReducer';
 function Book({ id, title, author }) {
   const dispatch = useDispatch();
   const handleClick = () => {
-    console.log(id);
     dispatch(deleteBook(id));
   };
   return (
-    <div>
-      <h2>
-        Title :
-        {' '}
+    <div className="BOOK_CONTAINER">
+      <h2 className="Title">
         {title}
       </h2>
-      <h4>
-        Author :
-        {' '}
+      <h4 className="author">
         {author}
-        {' '}
       </h4>
-      <button type="button" onClick={() => handleClick()}>Remove</button>
+      <button type="button" onClick={() => handleClick()} className="remove">Remove</button>
     </div>
   );
 }
