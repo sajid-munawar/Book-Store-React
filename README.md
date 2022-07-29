@@ -4,6 +4,7 @@
 
 > This is a website that allows users to add and remove books.
 
+![App preview](./public/app-preview.png)
 
 ## Built With
 
