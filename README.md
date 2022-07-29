@@ -24,7 +24,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-[BookStore Live](https://illustrious-hotteok-02237c.netlify.app/)
+[BookStore Live](https://effortless-kulfi-65ca17.netlify.app/)
 
 ## Author
 
