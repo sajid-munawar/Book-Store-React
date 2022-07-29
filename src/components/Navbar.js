@@ -9,6 +9,7 @@ function Navbar() {
           <Link to="/" className="BOOKS">Books</Link>
           <Link to="/categories" className="CATEGORIES">Categories</Link>
         </nav>
+        <img src="/profile.png" alt="profile" className="profile" />
       </div>
     </div>
   );
