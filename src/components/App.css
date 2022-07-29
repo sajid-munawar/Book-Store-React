@@ -141,20 +141,24 @@ a {
 }
 
 .addBookTitle {
-  height: 30px;
-  width: 40%;
+  border: 2px solid rgb(202, 201, 201);
+  border-radius: 5px;
+  height: 3.3rem;
+  width: 50%;
+  margin-right: 5%;
 }
 
 .add-author {
-  height: 30px;
-  width: 35%;
+  border: 2px solid rgb(202, 201, 201);
+  border-radius: 5px;
+  height: 3.3rem;
+  width: 20%;
 }
 
 .ADD-BOOK {
   width: 11.5rem;
-  height: 2.3rem;
+  height: 3.3rem;
   margin: 1.188rem 0 0 2rem;
-  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   border-radius: 3px;
   border: 0;
   background-color: #0290ff;
