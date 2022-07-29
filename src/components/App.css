@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+body {
+  box-sizing: border-box;
+}
+
 .nav-container {
   width: 87.5rem;
   height: 5.938rem;
@@ -45,13 +49,20 @@ a {
 }
 
 .BOOK_CONTAINER {
+  display: flex;
+  justify-content: space-between;
   width: 75rem;
-  height: 10.625rem;
   margin: 2.313rem 6.25rem 0;
-  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  padding: 2rem 3.188rem 1.625rem 1.688rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
+}
+
+.action {
+  color: #d4d2d2;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 .Title {
@@ -80,6 +91,7 @@ a {
   line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
+  margin-bottom: 1%;
 }
 
 .remove {
@@ -87,7 +99,6 @@ a {
   border: none;
   width: 3.375rem;
   height: 1.188rem;
-  margin: 0.188rem 0.938rem 0.125rem 6rem;
   font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
   font-weight: 300;
@@ -96,12 +107,19 @@ a {
   line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
+  margin-right: 2%;
+  background: none;
+}
+
+.c-edit {
+  color: #4386bf;
+  font-family: 'Roboto Slab', serif;
+  padding: 2% 2% 0 0;
 }
 
 .form-container {
   width: 87.5rem;
   height: 68.563rem;
-  padding: 2rem 9.188rem 1.625rem 1.688rem;
   margin: 2.313rem 6.25rem 0;
   border-radius: 4px;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
@@ -124,12 +142,12 @@ a {
 
 .addBookTitle {
   height: 30px;
-  width: 30%;
+  width: 40%;
 }
 
 .add-author {
   height: 30px;
-  width: 15%;
+  width: 35%;
 }
 
 .ADD-BOOK {
@@ -149,4 +167,34 @@ a {
   letter-spacing: 1.5px;
   text-align: center;
   color: #fff;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.percentage {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.completed {
+  color: gray;
+  margin-bottom: 5%;
+}
+
+.update-progress {
+  margin: 5% 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
